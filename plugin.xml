@@ -32,6 +32,12 @@
             name="NavigationView"
             restorable="true">
       </view>
+      <view
+            class="com.cleancoderocker.views.CommentsView"
+            id="com.cleancoderocker.views.CommentsView"
+            name="CommentsView"
+            restorable="true">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.perspectiveExtensions">
@@ -49,6 +55,12 @@
                minimized="false"
                relationship="left"
                relative="org.eclipse.ui.editorss">
+         </view>
+         <view
+               id="com.cleancoderocker.views.CommentsView"
+               minimized="false"
+               relationship="bottom"
+               relative="com.cleancoderocker.views.MainView">
          </view>
       </perspectiveExtension>
    </extension>
